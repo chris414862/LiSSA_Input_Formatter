@@ -1,4 +1,5 @@
 import sys
+import os
 import pathlib
 import argparse
 import re
@@ -101,6 +102,7 @@ def get_annotation_stats(annotations:List[lissa_annotation]):
 def print_stats(stats):
 
     # Basic counts
+    print("\n\nANNOTATION COUNTS")
     print("Num. sinks:\t\t",stats['SinksAndSourcesCount']['sink'],"\t\tNum. sources:\t",
           stats['SinksAndSourcesCount']['source'])
     print("From DroidSafe:\t",stats['Origin']['dsafe'],'\t\tFrom SuSi:\t\t',stats['Origin']['dsafe']

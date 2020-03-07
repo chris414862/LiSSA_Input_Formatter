@@ -30,7 +30,6 @@ def get_anns_internal(lines: list, parse_func, source_or_sink="", origin=''):
     :param origin:          Where lines came from [dsafe, susi, perm_map]
     :return:
     '''
-    print(len(lines))
     method_anns = []
     for method_ann in lines:
         parse = parse_func(method_ann, source_or_sink=source_or_sink)
@@ -73,10 +72,11 @@ def get_annotations(dsafe_files:list=None, susi_files:list=None, perm_map_files:
     :return:
     '''
     annotations = []
+    print("\nGetting annotations...")
     annotations += get_anns_from_file_list(dsafe_files, get_file_contents, parse_dsafe_ann_line, "dsafe")
     annotations += get_anns_from_file_list(susi_files, get_file_contents, parse_susi_ann_line, "susi")
     annotations += get_anns_from_file_list(perm_map_files, get_file_contents_csv, parse_perm_map_line, "perm_map")
-
+    print("Resolving duplicates...\n")
     annotations = resolve_dups(annotations)
 
     return annotations
@@ -119,7 +119,7 @@ def resolve_dups(annotations: List[lissa_annotation]):
 
                     # Found one disagreement (manually) and DroidSafe appeared more correct
                     if full_name == "android.content.ContextWrapper.openFileInput(String)":
-                        print("Using DroidSafe annotation:")
+                        print("Using DroidSafe annotation (resolved):")
                         if ann.origin == "dsafe":
                             seen_names[full_name] = ann
                         print(seen_names[full_name].source_or_sink)
