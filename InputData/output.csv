@@ -1,0 +1,655 @@
+"AccountManagerFuture android.accounts.AccountManager.addAccount(String, String, String, Bundle, Activity, AccountManagerCallback, Handler)",MANAGE_ACCOUNTS
+"boolean android.accounts.AccountManager.addAccountExplicitly(Account, String, Bundle)",AUTHENTICATE_ACCOUNTS
+"void android.accounts.AccountManager.addOnAccountsUpdatedListener(OnAccountsUpdateListener, Handler, boolean)",GET_ACCOUNTS
+"String android.accounts.AccountManager.blockingGetAuthToken(Account, String, boolean)",USE_CREDENTIALS
+void android.accounts.AccountManager.clearPassword(Account),MANAGE_ACCOUNTS
+"AccountManagerFuture android.accounts.AccountManager.confirmCredentials(Account, Bundle, Activity, AccountManagerCallback, Handler)",MANAGE_ACCOUNTS
+"AccountManagerFuture android.accounts.AccountManager.editProperties(String, Activity, AccountManagerCallback, Handler)",MANAGE_ACCOUNTS
+Account[] android.accounts.AccountManager.getAccounts(),GET_ACCOUNTS
+Account[] android.accounts.AccountManager.getAccountsByType(String),GET_ACCOUNTS
+"AccountManagerFuture android.accounts.AccountManager.getAccountsByTypeAndFeatures(String, String, AccountManagerCallback, Handler)",GET_ACCOUNTS
+"AccountManagerFuture android.accounts.AccountManager.getAuthToken(Account, String, Bundle, boolean, AccountManagerCallback, Handler)",USE_CREDENTIALS
+"AccountManagerFuture android.accounts.AccountManager.getAuthToken(Account, String, Bundle, Activity, AccountManagerCallback, Handler)",USE_CREDENTIALS
+"AccountManagerFuture android.accounts.AccountManager.getAuthToken(Account, String, boolean, AccountManagerCallback, Handler)",USE_CREDENTIALS
+"AccountManagerFuture android.accounts.AccountManager.getAuthTokenByFeatures(String, String, String, Activity, Bundle, Bundle, AccountManagerCallback, Handler)",MANAGE_ACCOUNTS
+String android.accounts.AccountManager.getPassword(Account),AUTHENTICATE_ACCOUNTS
+"String android.accounts.AccountManager.getUserData(Account, String)",AUTHENTICATE_ACCOUNTS
+"AccountManagerFuture android.accounts.AccountManager.hasFeatures(Account, String, AccountManagerCallback, Handler)",GET_ACCOUNTS
+"void android.accounts.AccountManager.invalidateAuthToken(String, String)",USE_CREDENTIALS,MANAGE_ACCOUNTS
+boolean android.accounts.AccountManager.notifyAccountAuthenticated(Account),AUTHENTICATE_ACCOUNTS
+"String android.accounts.AccountManager.peekAuthToken(Account, String)",AUTHENTICATE_ACCOUNTS
+"AccountManagerFuture android.accounts.AccountManager.removeAccount(Account, Activity, AccountManagerCallback, Handler)",MANAGE_ACCOUNTS
+"AccountManagerFuture android.accounts.AccountManager.removeAccount(Account, AccountManagerCallback, Handler)",MANAGE_ACCOUNTS
+boolean android.accounts.AccountManager.removeAccountExplicitly(Account),AUTHENTICATE_ACCOUNTS
+"AccountManagerFuture android.accounts.AccountManager.renameAccount(Account, String, AccountManagerCallback, Handler)",AUTHENTICATE_ACCOUNTS
+"void android.accounts.AccountManager.setAuthToken(Account, String, String)",AUTHENTICATE_ACCOUNTS
+"void android.accounts.AccountManager.setPassword(Account, String)",AUTHENTICATE_ACCOUNTS
+"void android.accounts.AccountManager.setUserData(Account, String, String)",AUTHENTICATE_ACCOUNTS
+"AccountManagerFuture android.accounts.AccountManager.updateCredentials(Account, String, Bundle, Activity, AccountManagerCallback, Handler)",MANAGE_ACCOUNTS
+FingerprintGestureController android.accessibilityservice.AccessibilityService.getFingerprintGestureController(),USE_FINGERPRINT
+String android.accessibilityservice.AccessibilityServiceInfo.capabilityToString(int),RETRIEVE_WINDOW_CONTENT
+boolean android.app.admin.DeviceAdminInfo.usesPolicy(int),CAMERA,CAMERA -GROUP-,STORAGE -GROUP-,RESET_PASSWORD
+"boolean android.app.admin.DevicePolicyManager.bindDeviceAdminServiceAsUser(ComponentName, Intent, ServiceConnection, int, UserHandle)",BIND_DEVICE_ADMIN
+int android.app.admin.DevicePolicyManager.getPasswordComplexity(),REQUEST_PASSWORD_COMPLEXITY
+"boolean android.app.admin.DevicePolicyManager.resetPassword(String, int)",RESET_PASSWORD
+"void android.app.admin.DevicePolicyManager.setAlwaysOnVpnPackage(ComponentName, String, boolean)",BIND_VPN_SERVICE
+"void android.app.admin.DevicePolicyManager.setCameraDisabled(ComponentName, boolean)",CAMERA,CAMERA -GROUP-
+"void android.app.admin.DevicePolicyManager.setDefaultSmsApplication(ComponentName, String)",SMS -GROUP-
+"void android.app.admin.DevicePolicyManager.setGlobalSetting(ComponentName, String, String)",BLUETOOTH,STORAGE -GROUP-
+"void android.app.admin.DevicePolicyManager.setKeyguardDisabledFeatures(ComponentName, int)",DISABLE_KEYGUARD
+"void android.app.admin.DevicePolicyManager.setSecureSetting(ComponentName, String, String)",LOCATION -GROUP-
+"void android.app.admin.DevicePolicyManager.setTrustAgentConfiguration(ComponentName, ComponentName, PersistableBundle)",DISABLE_KEYGUARD
+JobInfo.Builder android.app.job.JobInfo.Builder.setPersisted(boolean),RECEIVE_BOOT_COMPLETED
+void android.app.backup.BackupManager.dataChanged(String),BACKUP
+"boolean android.appwidget.AppWidgetManager.bindAppWidgetIdIfAllowed(int, ComponentName)",BIND_APPWIDGET
+"boolean android.appwidget.AppWidgetManager.bindAppWidgetIdIfAllowed(int, UserHandle, ComponentName, Bundle)",BIND_APPWIDGET
+"boolean android.appwidget.AppWidgetManager.bindAppWidgetIdIfAllowed(int, ComponentName, Bundle)",BIND_APPWIDGET
+"ExternalStorageStats android.app.usage.StorageStatsManager.queryExternalStatsForUser(UUID, UserHandle)",PACKAGE_USAGE_STATS
+"StorageStats android.app.usage.StorageStatsManager.queryStatsForPackage(UUID, String, UserHandle)",PACKAGE_USAGE_STATS
+"StorageStats android.app.usage.StorageStatsManager.queryStatsForUid(UUID, int)",PACKAGE_USAGE_STATS
+"StorageStats android.app.usage.StorageStatsManager.queryStatsForUser(UUID, UserHandle)",PACKAGE_USAGE_STATS
+"Map android.app.usage.UsageStatsManager.queryAndAggregateUsageStats(long, long)",PACKAGE_USAGE_STATS
+"List android.app.usage.UsageStatsManager.queryConfigurations(int, long, long)",PACKAGE_USAGE_STATS
+"List android.app.usage.UsageStatsManager.queryEventStats(int, long, long)",PACKAGE_USAGE_STATS
+"UsageEvents android.app.usage.UsageStatsManager.queryEvents(long, long)",PACKAGE_USAGE_STATS
+"List android.app.usage.UsageStatsManager.queryUsageStats(int, long, long)",PACKAGE_USAGE_STATS
+"void android.companion.CompanionDeviceManager.associate(AssociationRequest, CompanionDeviceManager.Callback, Handler)",USE_DATA_IN_BACKGROUND,REQUEST_COMPANION_RUN_IN_BACKGROUND,REQUEST_COMPANION_USE_DATA_IN_BACKGROUND,RUN_IN_BACKGROUND
+"void android.bluetooth.le.AdvertisingSet.enableAdvertising(boolean, int, int)",BLUETOOTH,BLUETOOTH_ADMIN
+"void android.bluetooth.le.BluetoothLeAdvertiser.startAdvertising(AdvertiseSettings, AdvertiseData, AdvertiseCallback)",BLUETOOTH,BLUETOOTH_ADMIN
+"void android.bluetooth.le.BluetoothLeAdvertiser.startAdvertising(AdvertiseSettings, AdvertiseData, AdvertiseData, AdvertiseCallback)",BLUETOOTH,BLUETOOTH_ADMIN
+void android.bluetooth.le.BluetoothLeAdvertiser.stopAdvertising(AdvertiseCallback),BLUETOOTH,BLUETOOTH_ADMIN
+"int android.bluetooth.le.BluetoothLeScanner.startScan(List, ScanSettings, PendingIntent)",BLUETOOTH,BLUETOOTH_ADMIN,LOCATION -GROUP-,ACCESS_FINE_LOCATION,ACCESS_COARSE_LOCATION
+void android.bluetooth.le.BluetoothLeScanner.startScan(ScanCallback),BLUETOOTH,BLUETOOTH_ADMIN,LOCATION -GROUP-,ACCESS_FINE_LOCATION,ACCESS_COARSE_LOCATION
+"void android.bluetooth.le.BluetoothLeScanner.startScan(List, ScanSettings, ScanCallback)",BLUETOOTH,BLUETOOTH_ADMIN,LOCATION -GROUP-,ACCESS_FINE_LOCATION,ACCESS_COARSE_LOCATION
+void android.bluetooth.le.BluetoothLeScanner.stopScan(),BLUETOOTH,BLUETOOTH_ADMIN
+void android.bluetooth.le.BluetoothLeScanner.stopScan(PendingIntent),BLUETOOTH,BLUETOOTH_ADMIN
+boolean android.bluetooth.BluetoothAdapter.cancelDiscovery(),BLUETOOTH,BLUETOOTH_ADMIN
+boolean android.bluetooth.BluetoothAdapter.disable(),BLUETOOTH,BLUETOOTH_ADMIN
+boolean android.bluetooth.BluetoothAdapter.enable(),BLUETOOTH,BLUETOOTH_ADMIN
+String android.bluetooth.BluetoothAdapter.getAddress(),BLUETOOTH
+Set android.bluetooth.BluetoothAdapter.getBondedDevices(),BLUETOOTH
+String android.bluetooth.BluetoothAdapter.getName(),BLUETOOTH
+int android.bluetooth.BluetoothAdapter.getProfileConnectionState(int),BLUETOOTH
+int android.bluetooth.BluetoothAdapter.getScanMode(),BLUETOOTH
+int android.bluetooth.BluetoothAdapter.getState(),BLUETOOTH
+boolean android.bluetooth.BluetoothAdapter.isDiscovering(),BLUETOOTH
+boolean android.bluetooth.BluetoothAdapter.isEnabled(),BLUETOOTH
+BluetoothServerSocket android.bluetooth.BluetoothAdapter.listenUsingInsecureL2capChannel(),BLUETOOTH
+"BluetoothServerSocket android.bluetooth.BluetoothAdapter.listenUsingInsecureRfcommWithServiceRecord(String, UUID)",BLUETOOTH
+BluetoothServerSocket android.bluetooth.BluetoothAdapter.listenUsingL2capChannel(),BLUETOOTH
+"BluetoothServerSocket android.bluetooth.BluetoothAdapter.listenUsingRfcommWithServiceRecord(String, UUID)",BLUETOOTH
+boolean android.bluetooth.BluetoothAdapter.setName(String),BLUETOOTH,BLUETOOTH_ADMIN
+boolean android.bluetooth.BluetoothAdapter.startDiscovery(),BLUETOOTH,BLUETOOTH_ADMIN
+"boolean android.bluetooth.BluetoothAdapter.startLeScan(UUID, BluetoothAdapter.LeScanCallback)",BLUETOOTH,BLUETOOTH_ADMIN
+boolean android.bluetooth.BluetoothAdapter.startLeScan(BluetoothAdapter.LeScanCallback),BLUETOOTH,BLUETOOTH_ADMIN
+void android.bluetooth.BluetoothAdapter.stopLeScan(BluetoothAdapter.LeScanCallback),BLUETOOTH,BLUETOOTH_ADMIN
+boolean android.bluetooth.BluetoothDevice.createBond(),BLUETOOTH,BLUETOOTH_ADMIN
+BluetoothSocket android.bluetooth.BluetoothDevice.createInsecureL2capChannel(int),BLUETOOTH
+BluetoothSocket android.bluetooth.BluetoothDevice.createInsecureRfcommSocketToServiceRecord(UUID),BLUETOOTH
+BluetoothSocket android.bluetooth.BluetoothDevice.createL2capChannel(int),BLUETOOTH
+BluetoothSocket android.bluetooth.BluetoothDevice.createRfcommSocketToServiceRecord(UUID),BLUETOOTH
+boolean android.bluetooth.BluetoothDevice.fetchUuidsWithSdp(),BLUETOOTH
+BluetoothClass android.bluetooth.BluetoothDevice.getBluetoothClass(),BLUETOOTH
+int android.bluetooth.BluetoothDevice.getBondState(),BLUETOOTH
+String android.bluetooth.BluetoothDevice.getName(),BLUETOOTH
+int android.bluetooth.BluetoothDevice.getType(),BLUETOOTH
+ParcelUuid[] android.bluetooth.BluetoothDevice.getUuids(),BLUETOOTH
+boolean android.bluetooth.BluetoothDevice.setPairingConfirmation(boolean),BLUETOOTH,BLUETOOTH_PRIVILEGED
+boolean android.bluetooth.BluetoothDevice.setPin(byte),BLUETOOTH,BLUETOOTH_ADMIN
+boolean android.bluetooth.BluetoothGattCharacteristic.addDescriptor(BluetoothGattDescriptor),BLUETOOTH
+boolean android.bluetooth.BluetoothGattService.addCharacteristic(BluetoothGattCharacteristic),BLUETOOTH
+boolean android.bluetooth.BluetoothGattService.addService(BluetoothGattService),BLUETOOTH
+List android.bluetooth.BluetoothHeadset.getConnectedDevices(),BLUETOOTH
+int android.bluetooth.BluetoothHeadset.getConnectionState(BluetoothDevice),BLUETOOTH
+List android.bluetooth.BluetoothHeadset.getDevicesMatchingConnectionStates(int),BLUETOOTH
+boolean android.bluetooth.BluetoothHeadset.isAudioConnected(BluetoothDevice),BLUETOOTH
+"boolean android.bluetooth.BluetoothHeadset.sendVendorSpecificResultCode(BluetoothDevice, String, String)",BLUETOOTH
+boolean android.bluetooth.BluetoothHeadset.startVoiceRecognition(BluetoothDevice),BLUETOOTH
+boolean android.bluetooth.BluetoothHeadset.stopVoiceRecognition(BluetoothDevice),BLUETOOTH
+List android.bluetooth.BluetoothHearingAid.getConnectedDevices(),BLUETOOTH
+int android.bluetooth.BluetoothHearingAid.getConnectionState(BluetoothDevice),BLUETOOTH
+List android.bluetooth.BluetoothHearingAid.getDevicesMatchingConnectionStates(int),BLUETOOTH
+BluetoothAdapter android.bluetooth.BluetoothManager.getAdapter(),BLUETOOTH
+List android.bluetooth.BluetoothManager.getConnectedDevices(int),BLUETOOTH
+"int android.bluetooth.BluetoothManager.getConnectionState(BluetoothDevice, int)",BLUETOOTH
+"List android.bluetooth.BluetoothManager.getDevicesMatchingConnectionStates(int, int)",BLUETOOTH
+List android.bluetooth.BluetoothA2dp.getConnectedDevices(),BLUETOOTH
+int android.bluetooth.BluetoothA2dp.getConnectionState(BluetoothDevice),BLUETOOTH
+List android.bluetooth.BluetoothA2dp.getDevicesMatchingConnectionStates(int),BLUETOOTH
+boolean android.bluetooth.BluetoothA2dp.isA2dpPlaying(BluetoothDevice),BLUETOOTH
+void android.bluetooth.BluetoothGatt.abortReliableWrite(),BLUETOOTH
+boolean android.bluetooth.BluetoothGatt.beginReliableWrite(),BLUETOOTH
+void android.bluetooth.BluetoothGatt.disconnect(),BLUETOOTH
+boolean android.bluetooth.BluetoothGatt.discoverServices(),BLUETOOTH
+boolean android.bluetooth.BluetoothGatt.executeReliableWrite(),BLUETOOTH
+BluetoothGattService android.bluetooth.BluetoothGatt.getService(UUID),BLUETOOTH
+List android.bluetooth.BluetoothGatt.getServices(),BLUETOOTH
+boolean android.bluetooth.BluetoothGatt.readCharacteristic(BluetoothGattCharacteristic),BLUETOOTH
+boolean android.bluetooth.BluetoothGatt.readDescriptor(BluetoothGattDescriptor),BLUETOOTH
+boolean android.bluetooth.BluetoothGatt.readRemoteRssi(),BLUETOOTH
+boolean android.bluetooth.BluetoothGatt.requestMtu(int),BLUETOOTH
+"boolean android.bluetooth.BluetoothGatt.setCharacteristicNotification(BluetoothGattCharacteristic, boolean)",BLUETOOTH
+boolean android.bluetooth.BluetoothGatt.writeCharacteristic(BluetoothGattCharacteristic),BLUETOOTH
+boolean android.bluetooth.BluetoothGatt.writeDescriptor(BluetoothGattDescriptor),BLUETOOTH
+boolean android.bluetooth.BluetoothGattServer.addService(BluetoothGattService),BLUETOOTH
+void android.bluetooth.BluetoothGattServer.cancelConnection(BluetoothDevice),BLUETOOTH
+void android.bluetooth.BluetoothGattServer.clearServices(),BLUETOOTH
+"boolean android.bluetooth.BluetoothGattServer.connect(BluetoothDevice, boolean)",BLUETOOTH
+BluetoothGattService android.bluetooth.BluetoothGattServer.getService(UUID),BLUETOOTH
+List android.bluetooth.BluetoothGattServer.getServices(),BLUETOOTH
+"boolean android.bluetooth.BluetoothGattServer.notifyCharacteristicChanged(BluetoothDevice, BluetoothGattCharacteristic, boolean)",BLUETOOTH
+boolean android.bluetooth.BluetoothGattServer.removeService(BluetoothGattService),BLUETOOTH
+"boolean android.bluetooth.BluetoothGattServer.sendResponse(BluetoothDevice, int, int, int, byte)",BLUETOOTH
+"boolean android.bluetooth.BluetoothHealth.connectChannelToSource(BluetoothDevice, BluetoothHealthAppConfiguration)",BLUETOOTH
+"boolean android.bluetooth.BluetoothHealth.disconnectChannel(BluetoothDevice, BluetoothHealthAppConfiguration, int)",BLUETOOTH
+List android.bluetooth.BluetoothHealth.getConnectedDevices(),BLUETOOTH
+int android.bluetooth.BluetoothHealth.getConnectionState(BluetoothDevice),BLUETOOTH
+List android.bluetooth.BluetoothHealth.getDevicesMatchingConnectionStates(int),BLUETOOTH
+"ParcelFileDescriptor android.bluetooth.BluetoothHealth.getMainChannelFd(BluetoothDevice, BluetoothHealthAppConfiguration)",BLUETOOTH
+"boolean android.bluetooth.BluetoothHealth.registerSinkAppConfiguration(String, int, BluetoothHealthCallback)",BLUETOOTH
+boolean android.bluetooth.BluetoothHealth.unregisterAppConfiguration(BluetoothHealthAppConfiguration),BLUETOOTH
+List android.bluetooth.BluetoothHidDevice.getConnectedDevices(),BLUETOOTH
+int android.bluetooth.BluetoothHidDevice.getConnectionState(BluetoothDevice),BLUETOOTH
+List android.bluetooth.BluetoothHidDevice.getDevicesMatchingConnectionStates(int),BLUETOOTH
+"void android.content.pm.LauncherApps.Callback.onPackagesSuspended(String, UserHandle, Bundle)",SUSPEND_APPS
+void android.content.pm.PackageInstaller.SessionParams.setInstallLocation(int),LOCATION -GROUP-
+boolean android.content.pm.PackageManager.canRequestPackageInstalls(),REQUEST_INSTALL_PACKAGES,INSTALL_PACKAGES
+Bundle android.content.pm.PackageManager.getSuspendedPackageAppExtras(),SUSPEND_APPS
+boolean android.content.pm.PackageManager.isPackageSuspended(),SUSPEND_APPS
+boolean android.content.pm.ShortcutManager.isRequestPinShortcutSupported(),INSTALL_SHORTCUT
+"boolean android.content.pm.ShortcutManager.requestPinShortcut(ShortcutInfo, IntentSender)",INSTALL_SHORTCUT
+"void android.content.pm.PackageInstaller.installExistingPackage(String, int, IntentSender)",INSTALL_EXISTING_PACKAGES,INSTALL_PACKAGES
+String android.content.Intent.normalizeMimeType(String),NFC
+void android.content.Context.clearWallpaper(),SET_WALLPAPER
+File android.content.Context.getExternalCacheDir(),WRITE_EXTERNAL_STORAGE,READ_EXTERNAL_STORAGE,STORAGE -GROUP-
+File[] android.content.Context.getExternalCacheDirs(),WRITE_EXTERNAL_STORAGE,STORAGE -GROUP-
+File android.content.Context.getExternalFilesDir(String),WRITE_EXTERNAL_STORAGE,READ_EXTERNAL_STORAGE,STORAGE -GROUP-
+File[] android.content.Context.getExternalFilesDirs(String),WRITE_EXTERNAL_STORAGE,STORAGE -GROUP-
+File[] android.content.Context.getExternalMediaDirs(),WRITE_EXTERNAL_STORAGE,STORAGE -GROUP-
+File android.content.Context.getObbDir(),WRITE_EXTERNAL_STORAGE,READ_EXTERNAL_STORAGE,STORAGE -GROUP-
+File[] android.content.Context.getObbDirs(),WRITE_EXTERNAL_STORAGE,STORAGE -GROUP-
+void android.content.Context.removeStickyBroadcast(Intent),BROADCAST_STICKY
+"void android.content.Context.removeStickyBroadcastAsUser(Intent, UserHandle)",BROADCAST_STICKY,INTERACT_ACROSS_USERS
+"void android.content.Context.sendBroadcastAsUser(Intent, UserHandle)",INTERACT_ACROSS_USERS
+"void android.content.Context.sendBroadcastAsUser(Intent, UserHandle, String)",INTERACT_ACROSS_USERS
+"void android.content.Context.sendOrderedBroadcastAsUser(Intent, UserHandle, String, BroadcastReceiver, Handler, int, String, Bundle)",INTERACT_ACROSS_USERS
+void android.content.Context.sendStickyBroadcast(Intent),BROADCAST_STICKY
+"void android.content.Context.sendStickyBroadcastAsUser(Intent, UserHandle)",BROADCAST_STICKY,INTERACT_ACROSS_USERS
+"void android.content.Context.sendStickyOrderedBroadcast(Intent, BroadcastReceiver, Handler, int, String, Bundle)",BROADCAST_STICKY
+"void android.content.Context.sendStickyOrderedBroadcastAsUser(Intent, UserHandle, BroadcastReceiver, Handler, int, String, Bundle)",BROADCAST_STICKY,INTERACT_ACROSS_USERS
+void android.content.Context.setWallpaper(Bitmap),SET_WALLPAPER
+void android.content.Context.setWallpaper(InputStream),SET_WALLPAPER
+"void android.content.ContentResolver.addPeriodicSync(Account, String, Bundle, long)",WRITE_SYNC_SETTINGS
+void android.content.ContentResolver.cancelSync(SyncRequest),WRITE_SYNC_SETTINGS
+SyncInfo android.content.ContentResolver.getCurrentSync(),READ_SYNC_STATS
+List android.content.ContentResolver.getCurrentSyncs(),READ_SYNC_STATS
+"int android.content.ContentResolver.getIsSyncable(Account, String)",READ_SYNC_SETTINGS
+boolean android.content.ContentResolver.getMasterSyncAutomatically(),READ_SYNC_SETTINGS
+"List android.content.ContentResolver.getPeriodicSyncs(Account, String)",READ_SYNC_SETTINGS
+"boolean android.content.ContentResolver.getSyncAutomatically(Account, String)",READ_SYNC_SETTINGS
+"boolean android.content.ContentResolver.isSyncActive(Account, String)",READ_SYNC_STATS
+"boolean android.content.ContentResolver.isSyncPending(Account, String)",READ_SYNC_STATS
+"void android.content.ContentResolver.removePeriodicSync(Account, String, Bundle)",WRITE_SYNC_SETTINGS
+"void android.content.ContentResolver.setIsSyncable(Account, String, int)",WRITE_SYNC_SETTINGS
+void android.content.ContentResolver.setMasterSyncAutomatically(boolean),WRITE_SYNC_SETTINGS
+"void android.content.ContentResolver.setSyncAutomatically(Account, String, boolean)",WRITE_SYNC_SETTINGS
+void android.content.ContextWrapper.clearWallpaper(),SET_WALLPAPER
+File android.content.ContextWrapper.getExternalCacheDir(),WRITE_EXTERNAL_STORAGE,READ_EXTERNAL_STORAGE,STORAGE -GROUP-
+File[] android.content.ContextWrapper.getExternalCacheDirs(),WRITE_EXTERNAL_STORAGE,STORAGE -GROUP-
+File android.content.ContextWrapper.getExternalFilesDir(String),WRITE_EXTERNAL_STORAGE,READ_EXTERNAL_STORAGE,STORAGE -GROUP-
+File[] android.content.ContextWrapper.getExternalFilesDirs(String),WRITE_EXTERNAL_STORAGE,STORAGE -GROUP-
+File[] android.content.ContextWrapper.getExternalMediaDirs(),WRITE_EXTERNAL_STORAGE,STORAGE -GROUP-
+File android.content.ContextWrapper.getObbDir(),WRITE_EXTERNAL_STORAGE,READ_EXTERNAL_STORAGE,STORAGE -GROUP-
+File[] android.content.ContextWrapper.getObbDirs(),WRITE_EXTERNAL_STORAGE,STORAGE -GROUP-
+void android.content.ContextWrapper.removeStickyBroadcast(Intent),BROADCAST_STICKY
+"void android.content.ContextWrapper.removeStickyBroadcastAsUser(Intent, UserHandle)",BROADCAST_STICKY,INTERACT_ACROSS_USERS
+"void android.content.ContextWrapper.sendBroadcastAsUser(Intent, UserHandle)",INTERACT_ACROSS_USERS
+"void android.content.ContextWrapper.sendBroadcastAsUser(Intent, UserHandle, String)",INTERACT_ACROSS_USERS
+"void android.content.ContextWrapper.sendOrderedBroadcastAsUser(Intent, UserHandle, String, BroadcastReceiver, Handler, int, String, Bundle)",INTERACT_ACROSS_USERS
+void android.content.ContextWrapper.sendStickyBroadcast(Intent),BROADCAST_STICKY
+"void android.content.ContextWrapper.sendStickyBroadcastAsUser(Intent, UserHandle)",BROADCAST_STICKY,INTERACT_ACROSS_USERS
+"void android.content.ContextWrapper.sendStickyOrderedBroadcast(Intent, BroadcastReceiver, Handler, int, String, Bundle)",BROADCAST_STICKY
+"void android.content.ContextWrapper.sendStickyOrderedBroadcastAsUser(Intent, UserHandle, BroadcastReceiver, Handler, int, String, Bundle)",BROADCAST_STICKY,INTERACT_ACROSS_USERS
+void android.content.ContextWrapper.setWallpaper(Bitmap),SET_WALLPAPER
+void android.content.ContextWrapper.setWallpaper(InputStream),SET_WALLPAPER
+int android.hardware.biometrics.BiometricManager.canAuthenticate(),USE_BIOMETRIC
+"void android.hardware.biometrics.BiometricPrompt.authenticate(CancellationSignal, Executor, BiometricPrompt.AuthenticationCallback)",USE_BIOMETRIC
+"void android.hardware.biometrics.BiometricPrompt.authenticate(BiometricPrompt.CryptoObject, CancellationSignal, Executor, BiometricPrompt.AuthenticationCallback)",USE_BIOMETRIC
+"void android.app.ActivityManager.dumpPackageState(FileDescriptor, String)",DUMP
+void android.app.ActivityManager.killBackgroundProcesses(String),KILL_BACKGROUND_PROCESSES
+"void android.app.ActivityManager.moveTaskToFront(int, int, Bundle)",REORDER_TASKS
+"void android.app.ActivityManager.moveTaskToFront(int, int)",REORDER_TASKS
+void android.app.AlarmManager.setTime(long),SET_TIME
+void android.app.AlarmManager.setTimeZone(String),SET_TIME,SET_TIME_ZONE
+String android.app.AppOpsManager.permissionToOp(String),LOCATION -GROUP-
+"DownloadManager.Request android.app.DownloadManager.Request.setDestinationInExternalPublicDir(String, String)",WRITE_EXTERNAL_STORAGE,STORAGE -GROUP-
+DownloadManager.Request android.app.DownloadManager.Request.setDestinationUri(Uri),WRITE_EXTERNAL_STORAGE,STORAGE -GROUP-
+void android.app.KeyguardManager.exitKeyguardSecurely(KeyguardManager.OnKeyguardExitResult),DISABLE_KEYGUARD
+Notification.Builder android.app.Notification.Builder.setDefaults(int),VIBRATE
+"Notification.Builder android.app.Notification.Builder.setFullScreenIntent(PendingIntent, boolean)",USE_FULL_SCREEN_INTENT
+Uri android.app.WallpaperInfo.getSettingsSliceUri(),BIND_WALLPAPER
+void android.app.WallpaperManager.clear(int),SET_WALLPAPER
+void android.app.WallpaperManager.clear(),SET_WALLPAPER
+void android.app.WallpaperManager.clearWallpaper(),SET_WALLPAPER
+Intent android.app.WallpaperManager.getCropAndSetWallpaperIntent(Uri),SET_WALLPAPER
+Drawable android.app.WallpaperManager.getFastDrawable(),READ_EXTERNAL_STORAGE,STORAGE -GROUP-
+ParcelFileDescriptor android.app.WallpaperManager.getWallpaperFile(int),READ_EXTERNAL_STORAGE,STORAGE -GROUP-
+Drawable android.app.WallpaperManager.peekFastDrawable(),READ_EXTERNAL_STORAGE,STORAGE -GROUP-
+"int android.app.WallpaperManager.setBitmap(Bitmap, Rect, boolean, int)",SET_WALLPAPER
+void android.app.WallpaperManager.setBitmap(Bitmap),SET_WALLPAPER
+"int android.app.WallpaperManager.setBitmap(Bitmap, Rect, boolean)",SET_WALLPAPER
+void android.app.WallpaperManager.setDisplayPadding(Rect),SET_WALLPAPER,SET_WALLPAPER_HINTS
+"int android.app.WallpaperManager.setResource(int, int)",SET_WALLPAPER
+void android.app.WallpaperManager.setResource(int),SET_WALLPAPER
+void android.app.WallpaperManager.setStream(InputStream),SET_WALLPAPER
+"int android.app.WallpaperManager.setStream(InputStream, Rect, boolean, int)",SET_WALLPAPER
+"int android.app.WallpaperManager.setStream(InputStream, Rect, boolean)",SET_WALLPAPER
+"void android.app.WallpaperManager.suggestDesiredDimensions(int, int)",SET_WALLPAPER,SET_WALLPAPER_HINTS
+void android.app.KeyguardManager.KeyguardLock.disableKeyguard(),DISABLE_KEYGUARD
+void android.app.KeyguardManager.KeyguardLock.reenableKeyguard(),DISABLE_KEYGUARD
+int android.app.Service.getForegroundServiceType(),FOREGROUND_SERVICE
+"void android.app.Service.startForeground(int, Notification)",FOREGROUND_SERVICE
+"void android.app.Service.startForeground(int, Notification, int)",FOREGROUND_SERVICE
+boolean android.hardware.usb.UsbManager.hasPermission(UsbDevice),CAMERA,CAMERA -GROUP-
+"T android.hardware.camera2.CaptureRequest.Builder.getPhysicalCameraKey(Key, String)",CAMERA,CAMERA -GROUP-
+"CaptureRequest.Builder android.hardware.camera2.CaptureRequest.Builder.setPhysicalCameraKey(Key, T, String)",CAMERA,CAMERA -GROUP-
+List android.hardware.camera2.CameraCharacteristics.getKeysNeedingPermission(),CAMERA,CAMERA -GROUP-
+Set android.hardware.camera2.CameraCharacteristics.getPhysicalCameraIds(),CAMERA,CAMERA -GROUP-
+"void android.hardware.camera2.CameraDevice.StateCallback.onError(CameraDevice, int)",CAMERA,CAMERA -GROUP-
+Map android.hardware.camera2.TotalCaptureResult.getPhysicalCameraResults(),CAMERA,CAMERA -GROUP-
+"void android.hardware.fingerprint.FingerprintManager.authenticate(FingerprintManager.CryptoObject, CancellationSignal, int, FingerprintManager.AuthenticationCallback, Handler)",USE_BIOMETRIC,USE_FINGERPRINT
+boolean android.hardware.fingerprint.FingerprintManager.hasEnrolledFingerprints(),USE_FINGERPRINT
+boolean android.hardware.fingerprint.FingerprintManager.isHardwareDetected(),USE_FINGERPRINT
+boolean android.location.LocationManager.addGpsStatusListener(GpsStatus.Listener),LOCATION -GROUP-,ACCESS_FINE_LOCATION
+"boolean android.location.LocationManager.addNmeaListener(OnNmeaMessageListener, Handler)",LOCATION -GROUP-,ACCESS_FINE_LOCATION
+boolean android.location.LocationManager.addNmeaListener(OnNmeaMessageListener),LOCATION -GROUP-,ACCESS_FINE_LOCATION
+"void android.location.LocationManager.addProximityAlert(double, double, float, long, PendingIntent)",LOCATION -GROUP-,ACCESS_FINE_LOCATION,ACCESS_COARSE_LOCATION
+GpsStatus android.location.LocationManager.getGpsStatus(GpsStatus),LOCATION -GROUP-,ACCESS_FINE_LOCATION
+Location android.location.LocationManager.getLastKnownLocation(String),LOCATION -GROUP-,ACCESS_FINE_LOCATION,ACCESS_COARSE_LOCATION
+"boolean android.location.LocationManager.registerGnssMeasurementsCallback(GnssMeasurementsEvent.Callback, Handler)",LOCATION -GROUP-,ACCESS_FINE_LOCATION
+boolean android.location.LocationManager.registerGnssMeasurementsCallback(GnssMeasurementsEvent.Callback),LOCATION -GROUP-,ACCESS_FINE_LOCATION
+"boolean android.location.LocationManager.registerGnssNavigationMessageCallback(GnssNavigationMessage.Callback, Handler)",LOCATION -GROUP-,ACCESS_FINE_LOCATION
+boolean android.location.LocationManager.registerGnssStatusCallback(GnssStatus.Callback),LOCATION -GROUP-,ACCESS_FINE_LOCATION
+"boolean android.location.LocationManager.registerGnssStatusCallback(GnssStatus.Callback, Handler)",LOCATION -GROUP-,ACCESS_FINE_LOCATION
+void android.location.LocationManager.removeProximityAlert(PendingIntent),LOCATION -GROUP-,ACCESS_FINE_LOCATION,ACCESS_COARSE_LOCATION
+void android.location.LocationManager.removeUpdates(LocationListener),LOCATION -GROUP-,ACCESS_FINE_LOCATION,ACCESS_COARSE_LOCATION
+"void android.location.LocationManager.requestLocationUpdates(String, long, float, LocationListener)",LOCATION -GROUP-,ACCESS_FINE_LOCATION,ACCESS_COARSE_LOCATION
+"void android.location.LocationManager.requestLocationUpdates(long, float, Criteria, LocationListener, Looper)",LOCATION -GROUP-,ACCESS_FINE_LOCATION,ACCESS_COARSE_LOCATION
+"void android.location.LocationManager.requestLocationUpdates(long, float, Criteria, PendingIntent)",LOCATION -GROUP-,ACCESS_FINE_LOCATION,ACCESS_COARSE_LOCATION
+"void android.location.LocationManager.requestLocationUpdates(String, long, float, LocationListener, Looper)",LOCATION -GROUP-,ACCESS_FINE_LOCATION,ACCESS_COARSE_LOCATION
+"void android.location.LocationManager.requestLocationUpdates(String, long, float, PendingIntent)",LOCATION -GROUP-,ACCESS_FINE_LOCATION,ACCESS_COARSE_LOCATION
+"void android.location.LocationManager.requestSingleUpdate(String, PendingIntent)",LOCATION -GROUP-,ACCESS_FINE_LOCATION,ACCESS_COARSE_LOCATION
+"void android.location.LocationManager.requestSingleUpdate(String, LocationListener, Looper)",LOCATION -GROUP-,ACCESS_FINE_LOCATION,ACCESS_COARSE_LOCATION
+"void android.location.LocationManager.requestSingleUpdate(Criteria, LocationListener, Looper)",LOCATION -GROUP-,ACCESS_FINE_LOCATION,ACCESS_COARSE_LOCATION
+"void android.location.LocationManager.requestSingleUpdate(Criteria, PendingIntent)",LOCATION -GROUP-,ACCESS_FINE_LOCATION,ACCESS_COARSE_LOCATION
+"void android.media.session.MediaSessionManager.addOnActiveSessionsChangedListener(MediaSessionManager.OnActiveSessionsChangedListener, ComponentName)",MEDIA_CONTENT_CONTROL
+"void android.media.session.MediaSessionManager.addOnActiveSessionsChangedListener(MediaSessionManager.OnActiveSessionsChangedListener, ComponentName, Handler)",MEDIA_CONTENT_CONTROL
+List android.media.session.MediaSessionManager.getActiveSessions(ComponentName),MEDIA_CONTENT_CONTROL
+boolean android.media.session.MediaSessionManager.isTrustedForMediaControl(MediaSessionManager.RemoteUserInfo),MEDIA_CONTENT_CONTROL
+"String android.icu.text.TimeZoneFormat.format(TimeZoneFormat.Style, TimeZone, long)",LOCATION -GROUP-
+"TimeZone android.icu.text.TimeZoneFormat.parse(String, ParsePosition)",LOCATION -GROUP-
+"int android.icu.text.Normalizer.compare(char, int, int, char, int, int, int)",NFC
+"int android.icu.text.Normalizer.compare(String, String, int)",NFC
+"Normalizer2 android.icu.text.Normalizer2.getInstance(InputStream, String, Normalizer2.Mode)",NFC
+Normalizer2 android.icu.text.Normalizer2.getNFCInstance(),NFC
+String android.icu.text.Normalizer2.getRawDecomposition(int),NFC
+void android.net.sip.SipAudioCall.setSpeakerMode(boolean),MODIFY_AUDIO_SETTINGS
+void android.net.sip.SipAudioCall.startAudio(),WAKE_LOCK,RECORD_AUDIO,ACCESS_WIFI_STATE
+"void android.net.wifi.aware.WifiAwareManager.attach(AttachCallback, IdentityChangedListener, Handler)",LOCATION -GROUP-,ACCESS_FINE_LOCATION
+"void android.net.wifi.aware.WifiAwareSession.publish(PublishConfig, DiscoverySessionCallback, Handler)",LOCATION -GROUP-,ACCESS_FINE_LOCATION
+"void android.net.wifi.aware.WifiAwareSession.subscribe(SubscribeConfig, DiscoverySessionCallback, Handler)",LOCATION -GROUP-,ACCESS_FINE_LOCATION
+Network android.net.ConnectivityManager.getActiveNetwork(),ACCESS_NETWORK_STATE
+NetworkInfo android.net.ConnectivityManager.getActiveNetworkInfo(),ACCESS_NETWORK_STATE
+NetworkInfo[] android.net.ConnectivityManager.getAllNetworkInfo(),ACCESS_NETWORK_STATE
+Network[] android.net.ConnectivityManager.getAllNetworks(),ACCESS_NETWORK_STATE
+LinkProperties android.net.ConnectivityManager.getLinkProperties(Network),ACCESS_NETWORK_STATE
+int android.net.ConnectivityManager.getMultipathPreference(Network),ACCESS_NETWORK_STATE
+NetworkCapabilities android.net.ConnectivityManager.getNetworkCapabilities(Network),ACCESS_NETWORK_STATE
+NetworkInfo android.net.ConnectivityManager.getNetworkInfo(int),ACCESS_NETWORK_STATE
+NetworkInfo android.net.ConnectivityManager.getNetworkInfo(Network),ACCESS_NETWORK_STATE
+int android.net.ConnectivityManager.getNetworkPreference(),ACCESS_NETWORK_STATE
+boolean android.net.ConnectivityManager.isActiveNetworkMetered(),ACCESS_NETWORK_STATE
+void android.net.ConnectivityManager.registerDefaultNetworkCallback(ConnectivityManager.NetworkCallback),ACCESS_NETWORK_STATE
+"void android.net.ConnectivityManager.registerDefaultNetworkCallback(ConnectivityManager.NetworkCallback, Handler)",ACCESS_NETWORK_STATE
+"void android.net.ConnectivityManager.registerNetworkCallback(NetworkRequest, ConnectivityManager.NetworkCallback)",ACCESS_NETWORK_STATE
+"void android.net.ConnectivityManager.registerNetworkCallback(NetworkRequest, PendingIntent)",ACCESS_NETWORK_STATE
+"void android.net.ConnectivityManager.registerNetworkCallback(NetworkRequest, ConnectivityManager.NetworkCallback, Handler)",ACCESS_NETWORK_STATE
+"void android.net.ConnectivityManager.requestNetwork(NetworkRequest, ConnectivityManager.NetworkCallback)",CHANGE_NETWORK_STATE
+"void android.net.ConnectivityManager.requestNetwork(NetworkRequest, ConnectivityManager.NetworkCallback, int)",CHANGE_NETWORK_STATE
+"void android.net.ConnectivityManager.requestNetwork(NetworkRequest, ConnectivityManager.NetworkCallback, Handler)",CHANGE_NETWORK_STATE
+"void android.net.ConnectivityManager.requestNetwork(NetworkRequest, PendingIntent)",CHANGE_NETWORK_STATE
+"void android.net.ConnectivityManager.requestNetwork(NetworkRequest, ConnectivityManager.NetworkCallback, Handler, int)",CHANGE_NETWORK_STATE
+void android.net.TrafficStats.setThreadStatsUid(int),UPDATE_DEVICE_STATS
+Uri android.net.Uri.normalizeScheme(),NFC
+int android.net.wifi.WifiManager.addNetworkSuggestions(List),LOCATION -GROUP-,ACCESS_FINE_LOCATION
+List android.net.wifi.WifiManager.getPasspointConfigurations(),NETWORK_SETTINGS,NETWORK_SETUP_WIZARD
+int android.net.wifi.WifiManager.removeNetworkSuggestions(List),CHANGE_WIFI_STATE
+void android.net.wifi.WifiManager.removePasspointConfiguration(String),NETWORK_SETTINGS
+boolean android.net.wifi.WifiManager.setWifiEnabled(boolean),CHANGE_WIFI_STATE
+"void android.net.wifi.WifiManager.startLocalOnlyHotspot(WifiManager.LocalOnlyHotspotCallback, Handler)",CHANGE_WIFI_STATE,LOCATION -GROUP-,ACCESS_FINE_LOCATION
+boolean android.net.wifi.WifiManager.startScan(),CHANGE_WIFI_STATE
+"void android.net.wifi.p2p.WifiP2pManager.addLocalService(WifiP2pManager.Channel, WifiP2pServiceInfo, WifiP2pManager.ActionListener)",LOCATION -GROUP-,ACCESS_FINE_LOCATION
+"void android.net.wifi.p2p.WifiP2pManager.connect(WifiP2pManager.Channel, WifiP2pConfig, WifiP2pManager.ActionListener)",LOCATION -GROUP-,ACCESS_FINE_LOCATION
+"void android.net.wifi.p2p.WifiP2pManager.createGroup(WifiP2pManager.Channel, WifiP2pManager.ActionListener)",LOCATION -GROUP-,ACCESS_FINE_LOCATION
+"void android.net.wifi.p2p.WifiP2pManager.createGroup(WifiP2pManager.Channel, WifiP2pConfig, WifiP2pManager.ActionListener)",LOCATION -GROUP-,ACCESS_FINE_LOCATION
+"void android.net.wifi.p2p.WifiP2pManager.discoverPeers(WifiP2pManager.Channel, WifiP2pManager.ActionListener)",LOCATION -GROUP-,ACCESS_FINE_LOCATION
+"void android.net.wifi.p2p.WifiP2pManager.discoverServices(WifiP2pManager.Channel, WifiP2pManager.ActionListener)",LOCATION -GROUP-,ACCESS_FINE_LOCATION
+"void android.net.wifi.p2p.WifiP2pManager.requestDeviceInfo(WifiP2pManager.Channel, WifiP2pManager.DeviceInfoListener)",LOCATION -GROUP-,ACCESS_FINE_LOCATION,LOCAL_MAC_ADDRESS
+"void android.net.wifi.p2p.WifiP2pManager.requestGroupInfo(WifiP2pManager.Channel, WifiP2pManager.GroupInfoListener)",LOCATION -GROUP-,ACCESS_FINE_LOCATION
+"void android.net.wifi.p2p.WifiP2pManager.requestPeers(WifiP2pManager.Channel, WifiP2pManager.PeerListListener)",LOCATION -GROUP-,ACCESS_FINE_LOCATION
+"void android.net.wifi.rtt.WifiRttManager.startRanging(RangingRequest, Executor, RangingResultCallback)",CHANGE_WIFI_STATE,LOCATION -GROUP-,ACCESS_FINE_LOCATION,ACCESS_WIFI_STATE
+byte[] android.nfc.NdefMessage.toByteArray(),NFC
+"NdefRecord android.nfc.NdefRecord.createExternal(String, String, byte)",NFC
+"NdefRecord android.nfc.NdefRecord.createTextRecord(String, String)",NFC
+NdefRecord android.nfc.NdefRecord.createUri(Uri),NFC
+NdefRecord android.nfc.NdefRecord.createUri(String),NFC
+void android.nfc.NfcAdapter.disableForegroundDispatch(Activity),NFC
+void android.nfc.NfcAdapter.disableForegroundNdefPush(Activity),NFC
+void android.nfc.NfcAdapter.disableReaderMode(Activity),NFC
+"void android.nfc.NfcAdapter.enableForegroundDispatch(Activity, PendingIntent, IntentFilter, String)",NFC
+"void android.nfc.NfcAdapter.enableForegroundNdefPush(Activity, NdefMessage)",NFC
+"void android.nfc.NfcAdapter.enableReaderMode(Activity, NfcAdapter.ReaderCallback, int, Bundle)",NFC
+NfcAdapter android.nfc.NfcAdapter.getDefaultAdapter(Context),NFC
+"boolean android.nfc.NfcAdapter.ignore(Tag, int, NfcAdapter.OnTagRemovedListener, Handler)",NFC
+boolean android.nfc.NfcAdapter.invokeBeam(Activity),NFC
+boolean android.nfc.NfcAdapter.isEnabled(),NFC
+boolean android.nfc.NfcAdapter.isNdefPushEnabled(),NFC
+boolean android.nfc.NfcAdapter.isSecureNfcEnabled(),NFC
+boolean android.nfc.NfcAdapter.isSecureNfcSupported(),NFC
+"void android.nfc.NfcAdapter.setBeamPushUris(Uri, Activity)",NFC
+"void android.nfc.NfcAdapter.setBeamPushUrisCallback(NfcAdapter.CreateBeamUrisCallback, Activity)",NFC
+"void android.nfc.NfcAdapter.setNdefPushMessage(NdefMessage, Activity, Activity)",NFC
+"void android.nfc.NfcAdapter.setNdefPushMessageCallback(NfcAdapter.CreateNdefMessageCallback, Activity, Activity)",NFC
+"void android.nfc.NfcAdapter.setOnNdefPushCompleteCallback(NfcAdapter.OnNdefPushCompleteCallback, Activity, Activity)",NFC
+NfcAdapter android.nfc.NfcManager.getDefaultAdapter(),NFC
+String[] android.nfc.Tag.getTechList(),NFC
+"boolean android.nfc.cardemulation.CardEmulation.setOffHostForService(ComponentName, String)",NFC
+boolean android.nfc.cardemulation.CardEmulation.unsetOffHostForService(ComponentName),NFC
+"byte[] android.nfc.cardemulation.HostApduService.processCommandApdu(byte, Bundle)",NFC
+"byte[] android.nfc.cardemulation.HostNfcFService.processNfcFPacket(byte, Bundle)",NFC
+"boolean android.nfc.cardemulation.NfcFCardEmulation.enableService(Activity, ComponentName)",NFC
+String android.nfc.cardemulation.NfcFCardEmulation.getNfcid2ForService(ComponentName),NFC
+"boolean android.nfc.cardemulation.NfcFCardEmulation.setNfcid2ForService(ComponentName, String)",NFC
+void android.nfc.tech.IsoDep.close(),NFC
+void android.nfc.tech.IsoDep.connect(),NFC
+int android.nfc.tech.IsoDep.getTimeout(),NFC
+boolean android.nfc.tech.IsoDep.isExtendedLengthApduSupported(),NFC
+void android.nfc.tech.IsoDep.setTimeout(int),NFC
+byte[] android.nfc.tech.IsoDep.transceive(byte),NFC
+void android.nfc.tech.MifareUltralight.close(),NFC
+void android.nfc.tech.MifareUltralight.connect(),NFC
+int android.nfc.tech.MifareUltralight.getTimeout(),NFC
+byte[] android.nfc.tech.MifareUltralight.readPages(int),NFC
+void android.nfc.tech.MifareUltralight.setTimeout(int),NFC
+byte[] android.nfc.tech.MifareUltralight.transceive(byte),NFC
+"void android.nfc.tech.MifareUltralight.writePage(int, byte)",NFC
+void android.nfc.tech.Ndef.close(),NFC
+void android.nfc.tech.Ndef.connect(),NFC
+NdefMessage android.nfc.tech.Ndef.getCachedNdefMessage(),NFC
+NdefMessage android.nfc.tech.Ndef.getNdefMessage(),NFC
+String android.nfc.tech.Ndef.getType(),NFC
+boolean android.nfc.tech.Ndef.isWritable(),NFC
+boolean android.nfc.tech.Ndef.makeReadOnly(),NFC
+void android.nfc.tech.Ndef.writeNdefMessage(NdefMessage),NFC
+void android.nfc.tech.NdefFormatable.close(),NFC
+void android.nfc.tech.NdefFormatable.connect(),NFC
+void android.nfc.tech.NdefFormatable.format(NdefMessage),NFC
+void android.nfc.tech.NdefFormatable.formatReadOnly(NdefMessage),NFC
+void android.nfc.tech.NfcA.close(),NFC
+void android.nfc.tech.NfcA.connect(),NFC
+NfcA android.nfc.tech.NfcA.get(Tag),NFC
+int android.nfc.tech.NfcA.getTimeout(),NFC
+void android.nfc.tech.NfcA.setTimeout(int),NFC
+byte[] android.nfc.tech.NfcA.transceive(byte),NFC
+void android.nfc.tech.NfcBarcode.close(),NFC
+void android.nfc.tech.NfcBarcode.connect(),NFC
+int android.nfc.tech.NfcBarcode.getType(),NFC
+void android.nfc.tech.NfcF.close(),NFC
+void android.nfc.tech.NfcF.connect(),NFC
+NfcF android.nfc.tech.NfcF.get(Tag),NFC
+int android.nfc.tech.NfcF.getTimeout(),NFC
+void android.nfc.tech.NfcF.setTimeout(int),NFC
+byte[] android.nfc.tech.NfcF.transceive(byte),NFC
+void android.nfc.tech.NfcV.close(),NFC
+void android.nfc.tech.NfcV.connect(),NFC
+NfcV android.nfc.tech.NfcV.get(Tag),NFC
+byte[] android.nfc.tech.NfcV.transceive(byte),NFC
+"boolean android.nfc.tech.MifareClassic.authenticateSectorWithKeyA(int, byte)",NFC
+"boolean android.nfc.tech.MifareClassic.authenticateSectorWithKeyB(int, byte)",NFC
+void android.nfc.tech.MifareClassic.close(),NFC
+void android.nfc.tech.MifareClassic.connect(),NFC
+"void android.nfc.tech.MifareClassic.decrement(int, int)",NFC
+int android.nfc.tech.MifareClassic.getTimeout(),NFC
+"void android.nfc.tech.MifareClassic.increment(int, int)",NFC
+byte[] android.nfc.tech.MifareClassic.readBlock(int),NFC
+void android.nfc.tech.MifareClassic.restore(int),NFC
+void android.nfc.tech.MifareClassic.setTimeout(int),NFC
+byte[] android.nfc.tech.MifareClassic.transceive(byte),NFC
+void android.nfc.tech.MifareClassic.transfer(int),NFC
+"void android.nfc.tech.MifareClassic.writeBlock(int, byte)",NFC
+void android.nfc.tech.NfcB.close(),NFC
+void android.nfc.tech.NfcB.connect(),NFC
+NfcB android.nfc.tech.NfcB.get(Tag),NFC
+byte[] android.nfc.tech.NfcB.transceive(byte),NFC
+long android.os.storage.StorageManager.getAllocatableBytes(UUID),STORAGE -GROUP-
+Intent android.os.storage.StorageVolume.createAccessIntent(String),WRITE_EXTERNAL_STORAGE,READ_EXTERNAL_STORAGE,STORAGE -GROUP-
+void android.media.AudioManager.startBluetoothSco(),MODIFY_AUDIO_SETTINGS
+void android.media.AudioManager.stopBluetoothSco(),MODIFY_AUDIO_SETTINGS
+"void android.media.MediaPlayer.setWakeMode(Context, int)",WAKE_LOCK
+int android.media.MicrophoneInfo.getLocation(),LOCATION -GROUP-
+Cursor android.media.RingtoneManager.getCursor(),READ_EXTERNAL_STORAGE,STORAGE -GROUP-
+Uri android.media.RingtoneManager.getValidRingtoneUri(Context),READ_EXTERNAL_STORAGE,STORAGE -GROUP-
+MediaSession2Service.MediaNotification android.media.MediaSession2Service.onUpdateNotification(MediaSession2),FOREGROUND_SERVICE
+String android.os.Build.getSerial(),READ_PHONE_STATE,READ_PRIVILEGED_PHONE_STATE,PHONE -GROUP-
+"DropBoxManager.Entry android.os.DropBoxManager.getNextEntry(String, long)",PACKAGE_USAGE_STATS,READ_LOGS
+int android.os.PowerManager.getLocationPowerSaveMode(),LOCATION -GROUP-
+"PowerManager.WakeLock android.os.PowerManager.newWakeLock(int, String)",WAKE_LOCK
+void android.os.PowerManager.reboot(String),REBOOT
+"void android.os.RecoverySystem.installPackage(Context, File)",REBOOT,RECOVERY
+void android.os.RecoverySystem.rebootWipeUserData(Context),REBOOT
+int android.os.UserManager.getUserCount(),MANAGE_USERS
+String android.os.UserManager.getUserName(),MANAGE_USERS,GET_ACCOUNTS,GET_ACCOUNTS_PRIVILEGED
+boolean android.os.UserManager.isUserUnlocked(UserHandle),MANAGE_USERS,INTERACT_ACROSS_USERS
+"boolean android.os.UserManager.requestQuietModeEnabled(boolean, UserHandle)",MANAGE_USERS,MODIFY_QUIET_MODE
+boolean android.os.UserManager.setRestrictionsChallenge(String),MANAGE_USERS
+"void android.os.UserManager.setUserRestriction(String, boolean)",MANAGE_USERS
+File android.os.Environment.getExternalStorageDirectory(),WRITE_EXTERNAL_STORAGE,READ_EXTERNAL_STORAGE,STORAGE -GROUP-
+"boolean android.os.Debug.dumpService(String, FileDescriptor, String)",DUMP
+StrictMode.VmPolicy.Builder android.os.StrictMode.VmPolicy.Builder.detectFileUriExposure(),READ_EXTERNAL_STORAGE,STORAGE -GROUP-
+void android.os.Vibrator.cancel(),VIBRATE
+void android.os.Vibrator.vibrate(long),VIBRATE
+void android.os.Vibrator.vibrate(VibrationEffect),VIBRATE
+"void android.os.Vibrator.vibrate(VibrationEffect, AudioAttributes)",VIBRATE
+"void android.os.Vibrator.vibrate(long, AudioAttributes)",VIBRATE
+"void android.service.carrier.CarrierMessagingService.onFilterSms(MessagePdu, String, int, int, ResultCallback)",SMS -GROUP-
+"void android.service.carrier.CarrierMessagingService.onReceiveTextSms(MessagePdu, String, int, int, ResultCallback)",SMS -GROUP-
+"void android.service.carrier.CarrierMessagingService.onSendDataSms(byte, int, String, int, ResultCallback)",SMS -GROUP-
+"void android.service.carrier.CarrierMessagingService.onSendDataSms(byte, int, String, int, int, ResultCallback)",SMS -GROUP-
+"void android.service.carrier.CarrierMessagingService.onSendMultipartTextSms(List, int, String, ResultCallback)",SMS -GROUP-
+"void android.service.carrier.CarrierMessagingService.onSendMultipartTextSms(List, int, String, int, ResultCallback)",SMS -GROUP-
+"void android.service.carrier.CarrierMessagingService.onSendTextSms(String, int, String, int, ResultCallback)",SMS -GROUP-
+"void android.service.carrier.CarrierMessagingService.onSendTextSms(String, int, String, ResultCallback)",SMS -GROUP-
+int[] android.service.carrier.CarrierMessagingService.SendMultipartSmsResult.getMessageRefs(),SMS -GROUP-
+int android.service.carrier.CarrierMessagingService.SendMultipartSmsResult.getSendStatus(),SMS -GROUP-
+int android.service.carrier.CarrierMessagingService.SendSmsResult.getMessageRef(),SMS -GROUP-
+int android.service.carrier.CarrierMessagingService.SendSmsResult.getSendStatus(),SMS -GROUP-
+List android.service.carrier.MessagePdu.getPdus(),SMS -GROUP-
+"void android.telephony.euicc.EuiccManager.deleteSubscription(int, PendingIntent)",WRITE_EMBEDDED_SUBSCRIPTIONS
+"void android.telephony.euicc.EuiccManager.downloadSubscription(DownloadableSubscription, boolean, PendingIntent)",WRITE_EMBEDDED_SUBSCRIPTIONS
+"void android.telephony.euicc.EuiccManager.switchToSubscription(int, PendingIntent)",WRITE_EMBEDDED_SUBSCRIPTIONS
+"void android.telephony.euicc.EuiccManager.updateSubscriptionNickname(int, String, PendingIntent)",WRITE_EMBEDDED_SUBSCRIPTIONS
+ArrayList android.telephony.gsm.SmsManager.divideMessage(String),SMS -GROUP-
+"void android.telephony.gsm.SmsManager.sendDataMessage(String, String, short, byte, PendingIntent, PendingIntent)",SMS -GROUP-
+"void android.telephony.gsm.SmsManager.sendMultipartTextMessage(String, String, ArrayList, ArrayList, ArrayList)",SMS -GROUP-
+"void android.telephony.gsm.SmsManager.sendTextMessage(String, String, String, PendingIntent, PendingIntent)",SMS -GROUP-
+"int[] android.telephony.gsm.SmsMessage.calculateLength(CharSequence, boolean)",SMS -GROUP-
+"int[] android.telephony.gsm.SmsMessage.calculateLength(String, boolean)",SMS -GROUP-
+String android.telephony.gsm.SmsMessage.getOriginatingAddress(),SMS -GROUP-
+String android.telephony.gsm.SmsMessage.getServiceCenterAddress(),SMS -GROUP-
+int android.telephony.gsm.SmsMessage.getStatus(),SMS -GROUP-
+"SmsMessage.SubmitPdu android.telephony.gsm.SmsMessage.getSubmitPdu(String, String, String, boolean)",SMS -GROUP-
+"SmsMessage.SubmitPdu android.telephony.gsm.SmsMessage.getSubmitPdu(String, String, short, byte, boolean)",SMS -GROUP-
+int android.telephony.gsm.SmsMessage.getTPLayerLengthForPDU(String),SMS -GROUP-
+boolean android.telephony.gsm.SmsMessage.isReplace(),SMS -GROUP-
+boolean android.telephony.gsm.SmsMessage.isStatusReportMessage(),SMS -GROUP-
+"void android.telecom.TelecomManager.acceptHandover(Uri, int, PhoneAccountHandle)",MANAGE_OWN_CALLS
+void android.telecom.TelecomManager.acceptRingingCall(int),MODIFY_PHONE_STATE,PHONE -GROUP-,ANSWER_PHONE_CALLS
+void android.telecom.TelecomManager.acceptRingingCall(),MODIFY_PHONE_STATE,PHONE -GROUP-,ANSWER_PHONE_CALLS
+"void android.telecom.TelecomManager.addNewIncomingCall(PhoneAccountHandle, Bundle)",MANAGE_OWN_CALLS
+boolean android.telecom.TelecomManager.endCall(),PHONE -GROUP-,ANSWER_PHONE_CALLS
+Uri android.telecom.TelecomManager.getAdnUriForPhoneAccount(PhoneAccountHandle),MODIFY_PHONE_STATE,PHONE -GROUP-
+List android.telecom.TelecomManager.getCallCapablePhoneAccounts(),READ_PHONE_STATE,PHONE -GROUP-
+PhoneAccountHandle android.telecom.TelecomManager.getDefaultOutgoingPhoneAccount(String),READ_PHONE_STATE,PHONE -GROUP-
+String android.telecom.TelecomManager.getLine1Number(PhoneAccountHandle),READ_PHONE_STATE,PHONE -GROUP-
+List android.telecom.TelecomManager.getSelfManagedPhoneAccounts(),READ_PHONE_STATE,PHONE -GROUP-
+PhoneAccountHandle android.telecom.TelecomManager.getUserSelectedOutgoingPhoneAccount(),READ_PHONE_STATE,PHONE -GROUP-
+String android.telecom.TelecomManager.getVoiceMailNumber(PhoneAccountHandle),READ_PHONE_STATE,PHONE -GROUP-
+boolean android.telecom.TelecomManager.isInCall(),READ_PHONE_STATE,PHONE -GROUP-
+boolean android.telecom.TelecomManager.isInManagedCall(),READ_PHONE_STATE,PHONE -GROUP-
+boolean android.telecom.TelecomManager.isTtySupported(),READ_PHONE_STATE,READ_PRIVILEGED_PHONE_STATE,PHONE -GROUP-
+"boolean android.telecom.TelecomManager.isVoiceMailNumber(PhoneAccountHandle, String)",READ_PHONE_STATE,PHONE -GROUP-
+"void android.telecom.TelecomManager.placeCall(Uri, Bundle)",MANAGE_OWN_CALLS,CALL_PHONE,PHONE -GROUP-
+void android.telecom.TelecomManager.showInCallScreen(boolean),READ_PHONE_STATE,PHONE -GROUP-
+void android.telecom.TelecomManager.silenceRinger(),MODIFY_PHONE_STATE,PHONE -GROUP-
+void android.test.mock.MockContext.clearWallpaper(),SET_WALLPAPER
+File android.test.mock.MockContext.getExternalCacheDir(),WRITE_EXTERNAL_STORAGE,READ_EXTERNAL_STORAGE,STORAGE -GROUP-
+File[] android.test.mock.MockContext.getExternalCacheDirs(),WRITE_EXTERNAL_STORAGE,STORAGE -GROUP-
+File android.test.mock.MockContext.getExternalFilesDir(String),WRITE_EXTERNAL_STORAGE,READ_EXTERNAL_STORAGE,STORAGE -GROUP-
+File[] android.test.mock.MockContext.getExternalFilesDirs(String),WRITE_EXTERNAL_STORAGE,STORAGE -GROUP-
+File[] android.test.mock.MockContext.getExternalMediaDirs(),WRITE_EXTERNAL_STORAGE,STORAGE -GROUP-
+File android.test.mock.MockContext.getObbDir(),WRITE_EXTERNAL_STORAGE,READ_EXTERNAL_STORAGE,STORAGE -GROUP-
+File[] android.test.mock.MockContext.getObbDirs(),WRITE_EXTERNAL_STORAGE,STORAGE -GROUP-
+void android.test.mock.MockContext.removeStickyBroadcast(Intent),BROADCAST_STICKY
+"void android.test.mock.MockContext.removeStickyBroadcastAsUser(Intent, UserHandle)",BROADCAST_STICKY,INTERACT_ACROSS_USERS
+"void android.test.mock.MockContext.sendBroadcastAsUser(Intent, UserHandle)",INTERACT_ACROSS_USERS
+"void android.test.mock.MockContext.sendBroadcastAsUser(Intent, UserHandle, String)",INTERACT_ACROSS_USERS
+"void android.test.mock.MockContext.sendOrderedBroadcastAsUser(Intent, UserHandle, String, BroadcastReceiver, Handler, int, String, Bundle)",INTERACT_ACROSS_USERS
+void android.test.mock.MockContext.sendStickyBroadcast(Intent),BROADCAST_STICKY
+"void android.test.mock.MockContext.sendStickyBroadcastAsUser(Intent, UserHandle)",BROADCAST_STICKY,INTERACT_ACROSS_USERS
+"void android.test.mock.MockContext.sendStickyOrderedBroadcast(Intent, BroadcastReceiver, Handler, int, String, Bundle)",BROADCAST_STICKY
+"void android.test.mock.MockContext.sendStickyOrderedBroadcastAsUser(Intent, UserHandle, BroadcastReceiver, Handler, int, String, Bundle)",BROADCAST_STICKY,INTERACT_ACROSS_USERS
+void android.test.mock.MockContext.setWallpaper(Bitmap),SET_WALLPAPER
+void android.test.mock.MockContext.setWallpaper(InputStream),SET_WALLPAPER
+boolean android.test.mock.MockPackageManager.canRequestPackageInstalls(),REQUEST_INSTALL_PACKAGES,INSTALL_PACKAGES
+PersistableBundle android.telephony.CarrierConfigManager.getConfig(),READ_PHONE_STATE,PHONE -GROUP-
+PersistableBundle android.telephony.CarrierConfigManager.getConfigForSubId(int),READ_PHONE_STATE,PHONE -GROUP-
+void android.telephony.CellLocation.requestLocationUpdate(),LOCATION -GROUP-
+void android.telephony.PhoneStateListener.onActiveDataSubscriptionIdChanged(int),READ_PHONE_STATE,PHONE -GROUP-
+String android.telephony.SmsManager.createAppSpecificSmsToken(PendingIntent),SMS -GROUP-
+"String android.telephony.SmsManager.createAppSpecificSmsTokenWithPackageInfo(String, PendingIntent)",SMS -GROUP-
+ArrayList android.telephony.SmsManager.divideMessage(String),SMS -GROUP-
+"void android.telephony.SmsManager.downloadMultimediaMessage(Context, String, Uri, Bundle, PendingIntent)",SMS -GROUP-
+Bundle android.telephony.SmsManager.getCarrierConfigValues(),SMS -GROUP-
+SmsManager android.telephony.SmsManager.getDefault(),SMS -GROUP-
+SmsManager android.telephony.SmsManager.getSmsManagerForSubscriptionId(int),SMS -GROUP-
+"void android.telephony.SmsManager.getSmsMessagesForFinancialApp(Bundle, Executor, SmsManager.FinancialSmsCallback)",SMS -GROUP-
+int android.telephony.SmsManager.getSubscriptionId(),SMS -GROUP-
+"void android.telephony.SmsManager.injectSmsPdu(byte, String, PendingIntent)",MODIFY_PHONE_STATE,PHONE -GROUP-,SMS -GROUP-
+"void android.telephony.SmsManager.sendDataMessage(String, String, short, byte, PendingIntent, PendingIntent)",SEND_SMS,SMS -GROUP-
+"void android.telephony.SmsManager.sendMultimediaMessage(Context, Uri, String, Bundle, PendingIntent)",SMS -GROUP-
+"void android.telephony.SmsManager.sendMultipartTextMessage(String, String, ArrayList, ArrayList, ArrayList)",SEND_SMS,SMS -GROUP-
+"void android.telephony.SmsManager.sendTextMessage(String, String, String, PendingIntent, PendingIntent)",SEND_SMS,SMS -GROUP-
+"void android.telephony.SmsManager.sendTextMessageWithoutPersisting(String, String, String, PendingIntent, PendingIntent)",SEND_SMS,MODIFY_PHONE_STATE,PHONE -GROUP-,SMS -GROUP-
+Bundle android.telephony.VisualVoicemailSms.getFields(),SMS -GROUP-
+String android.telephony.VisualVoicemailSms.getMessageBody(),SMS -GROUP-
+PhoneAccountHandle android.telephony.VisualVoicemailSms.getPhoneAccountHandle(),SMS -GROUP-
+String android.telephony.VisualVoicemailSms.getPrefix(),SMS -GROUP-
+VisualVoicemailSmsFilterSettings.Builder android.telephony.VisualVoicemailSmsFilterSettings.Builder.setClientPrefix(String),SMS -GROUP-
+VisualVoicemailSmsFilterSettings.Builder android.telephony.VisualVoicemailSmsFilterSettings.Builder.setDestinationPort(int),SMS -GROUP-
+VisualVoicemailSmsFilterSettings.Builder android.telephony.VisualVoicemailSmsFilterSettings.Builder.setOriginatingNumbers(List),SMS -GROUP-
+boolean android.telephony.TelephonyManager.doesSwitchMultiSimConfigTriggerReboot(),READ_PHONE_STATE,PHONE -GROUP-
+List android.telephony.TelephonyManager.getAllCellInfo(),LOCATION -GROUP-,ACCESS_FINE_LOCATION
+PersistableBundle android.telephony.TelephonyManager.getCarrierConfig(),READ_PHONE_STATE,PHONE -GROUP-
+CellLocation android.telephony.TelephonyManager.getCellLocation(),LOCATION -GROUP-,ACCESS_FINE_LOCATION
+int android.telephony.TelephonyManager.getDataNetworkType(),READ_PHONE_STATE,PHONE -GROUP-
+String android.telephony.TelephonyManager.getDeviceId(),READ_PHONE_STATE,READ_PRIVILEGED_PHONE_STATE,PHONE -GROUP-
+String android.telephony.TelephonyManager.getDeviceId(int),READ_PHONE_STATE,READ_PRIVILEGED_PHONE_STATE,PHONE -GROUP-
+String android.telephony.TelephonyManager.getDeviceSoftwareVersion(),READ_PHONE_STATE,PHONE -GROUP-
+Map android.telephony.TelephonyManager.getEmergencyNumberList(),READ_PHONE_STATE,PHONE -GROUP-
+Map android.telephony.TelephonyManager.getEmergencyNumberList(int),READ_PHONE_STATE,PHONE -GROUP-
+String[] android.telephony.TelephonyManager.getForbiddenPlmns(),READ_PHONE_STATE,PHONE -GROUP-
+String android.telephony.TelephonyManager.getGroupIdLevel1(),READ_PHONE_STATE,PHONE -GROUP-
+"String android.telephony.TelephonyManager.getIccAuthentication(int, int, String)",READ_PRIVILEGED_PHONE_STATE,PHONE -GROUP-
+String android.telephony.TelephonyManager.getImei(int),READ_PHONE_STATE,READ_PRIVILEGED_PHONE_STATE,PHONE -GROUP-,SMS -GROUP-
+String android.telephony.TelephonyManager.getImei(),READ_PRIVILEGED_PHONE_STATE,PHONE -GROUP-
+String android.telephony.TelephonyManager.getLine1Number(),READ_PHONE_NUMBERS,READ_PHONE_STATE,PHONE -GROUP-,SMS -GROUP-,READ_SMS
+String android.telephony.TelephonyManager.getMeid(),READ_PHONE_STATE,READ_PRIVILEGED_PHONE_STATE,PHONE -GROUP-
+String android.telephony.TelephonyManager.getMeid(int),READ_PHONE_STATE,READ_PRIVILEGED_PHONE_STATE,PHONE -GROUP-
+String android.telephony.TelephonyManager.getNai(),READ_PHONE_STATE,PHONE -GROUP-
+int android.telephony.TelephonyManager.getPreferredOpportunisticDataSubscription(),READ_PHONE_STATE,READ_PRIVILEGED_PHONE_STATE,PHONE -GROUP-
+ServiceState android.telephony.TelephonyManager.getServiceState(),READ_PHONE_STATE,LOCATION -GROUP-,PHONE -GROUP-,ACCESS_COARSE_LOCATION
+String android.telephony.TelephonyManager.getSimSerialNumber(),READ_PHONE_STATE,READ_PRIVILEGED_PHONE_STATE,PHONE -GROUP-
+String android.telephony.TelephonyManager.getSubscriberId(),READ_PHONE_STATE,READ_PRIVILEGED_PHONE_STATE,PHONE -GROUP-
+List android.telephony.TelephonyManager.getUiccCardsInfo(),READ_PRIVILEGED_PHONE_STATE,PHONE -GROUP-
+String android.telephony.TelephonyManager.getVisualVoicemailPackageName(),READ_PHONE_STATE,PHONE -GROUP-
+String android.telephony.TelephonyManager.getVoiceMailAlphaTag(),READ_PHONE_STATE,PHONE -GROUP-
+String android.telephony.TelephonyManager.getVoiceMailNumber(),READ_PHONE_STATE,PHONE -GROUP-
+int android.telephony.TelephonyManager.getVoiceNetworkType(),READ_PHONE_STATE,PHONE -GROUP-
+boolean android.telephony.TelephonyManager.iccCloseLogicalChannel(int),MODIFY_PHONE_STATE,PHONE -GROUP-
+"byte[] android.telephony.TelephonyManager.iccExchangeSimIO(int, int, int)",MODIFY_PHONE_STATE,PHONE -GROUP-
+"IccOpenLogicalChannelResponse android.telephony.TelephonyManager.iccOpenLogicalChannel(String, int)",MODIFY_PHONE_STATE,PHONE -GROUP-
+IccOpenLogicalChannelResponse android.telephony.TelephonyManager.iccOpenLogicalChannel(String),MODIFY_PHONE_STATE,PHONE -GROUP-
+"String android.telephony.TelephonyManager.iccTransmitApduBasicChannel(int, int, int, int, int, String)",MODIFY_PHONE_STATE,PHONE -GROUP-
+"String android.telephony.TelephonyManager.iccTransmitApduLogicalChannel(int, int, int, int, int, int, String)",MODIFY_PHONE_STATE,PHONE -GROUP-
+boolean android.telephony.TelephonyManager.isDataEnabled(),MODIFY_PHONE_STATE,PHONE -GROUP-,ACCESS_NETWORK_STATE
+boolean android.telephony.TelephonyManager.isDataRoamingEnabled(),READ_PHONE_STATE,PHONE -GROUP-,ACCESS_NETWORK_STATE
+int android.telephony.TelephonyManager.isMultiSimSupported(),READ_PHONE_STATE,PHONE -GROUP-
+"void android.telephony.TelephonyManager.requestCellInfoUpdate(Executor, TelephonyManager.CellInfoCallback)",LOCATION -GROUP-,ACCESS_FINE_LOCATION
+"NetworkScan android.telephony.TelephonyManager.requestNetworkScan(NetworkScanRequest, Executor, TelephonyScanManager.NetworkScanCallback)",MODIFY_PHONE_STATE,LOCATION -GROUP-,PHONE -GROUP-,ACCESS_FINE_LOCATION
+String android.telephony.TelephonyManager.sendEnvelopeWithStatus(String),MODIFY_PHONE_STATE,PHONE -GROUP-
+"void android.telephony.TelephonyManager.sendUssdRequest(String, TelephonyManager.UssdResponseCallback, Handler)",CALL_PHONE,PHONE -GROUP-
+"void android.telephony.TelephonyManager.sendVisualVoicemailSms(String, int, String, PendingIntent)",SEND_SMS,SMS -GROUP-
+void android.telephony.TelephonyManager.setDataEnabled(boolean),MODIFY_PHONE_STATE,PHONE -GROUP-
+void android.telephony.TelephonyManager.setNetworkSelectionModeAutomatic(),MODIFY_PHONE_STATE,PHONE -GROUP-
+"boolean android.telephony.TelephonyManager.setNetworkSelectionModeManual(String, boolean)",MODIFY_PHONE_STATE,PHONE -GROUP-
+"void android.telephony.TelephonyManager.setPreferredOpportunisticDataSubscription(int, boolean, Executor, Consumer)",MODIFY_PHONE_STATE,PHONE -GROUP-
+void android.telephony.TelephonyManager.setVisualVoicemailSmsFilterSettings(VisualVoicemailSmsFilterSettings),SMS -GROUP-
+"void android.telephony.TelephonyManager.setVoicemailRingtoneUri(PhoneAccountHandle, Uri)",MODIFY_PHONE_STATE,PHONE -GROUP-
+"void android.telephony.TelephonyManager.setVoicemailVibrationEnabled(PhoneAccountHandle, boolean)",MODIFY_PHONE_STATE,PHONE -GROUP-
+void android.telephony.TelephonyManager.switchMultiSimConfig(int),MODIFY_PHONE_STATE,PHONE -GROUP-
+"void android.telephony.TelephonyManager.updateAvailableNetworks(List, Executor, Consumer)",MODIFY_PHONE_STATE,PHONE -GROUP-
+boolean android.telephony.PhoneNumberUtils.isVoiceMailNumber(String),READ_PHONE_STATE,PHONE -GROUP-
+boolean android.telephony.PhoneNumberUtils.isWellFormedSmsAddress(String),SMS -GROUP-
+"int[] android.telephony.SmsMessage.calculateLength(CharSequence, boolean)",SMS -GROUP-
+"int[] android.telephony.SmsMessage.calculateLength(String, boolean)",SMS -GROUP-
+SmsMessage android.telephony.SmsMessage.createFromPdu(byte),SMS -GROUP-
+"SmsMessage android.telephony.SmsMessage.createFromPdu(byte, String)",SMS -GROUP-
+String android.telephony.SmsMessage.getOriginatingAddress(),SMS -GROUP-
+String android.telephony.SmsMessage.getServiceCenterAddress(),SMS -GROUP-
+int android.telephony.SmsMessage.getStatus(),SMS -GROUP-
+"SmsMessage.SubmitPdu android.telephony.SmsMessage.getSubmitPdu(String, String, String, boolean)",SMS -GROUP-
+"SmsMessage.SubmitPdu android.telephony.SmsMessage.getSubmitPdu(String, String, short, byte, boolean)",SMS -GROUP-
+int android.telephony.SmsMessage.getTPLayerLengthForPDU(String),SMS -GROUP-
+boolean android.telephony.SmsMessage.isReplace(),SMS -GROUP-
+boolean android.telephony.SmsMessage.isStatusReportMessage(),SMS -GROUP-
+"void android.telephony.SubscriptionManager.addSubscriptionsIntoGroup(List, ParcelUuid)",MODIFY_PHONE_STATE,PHONE -GROUP-
+ParcelUuid android.telephony.SubscriptionManager.createSubscriptionGroup(List),MODIFY_PHONE_STATE,PHONE -GROUP-
+SubscriptionInfo android.telephony.SubscriptionManager.getActiveSubscriptionInfo(int),READ_PHONE_STATE,PHONE -GROUP-
+int android.telephony.SubscriptionManager.getActiveSubscriptionInfoCount(),READ_PHONE_STATE,PHONE -GROUP-
+SubscriptionInfo android.telephony.SubscriptionManager.getActiveSubscriptionInfoForSimSlotIndex(int),READ_PHONE_STATE,PHONE -GROUP-
+List android.telephony.SubscriptionManager.getActiveSubscriptionInfoList(),READ_PHONE_STATE,PHONE -GROUP-
+int android.telephony.SubscriptionManager.getDefaultSmsSubscriptionId(),SMS -GROUP-
+List android.telephony.SubscriptionManager.getOpportunisticSubscriptions(),READ_PHONE_STATE,PHONE -GROUP-
+List android.telephony.SubscriptionManager.getSubscriptionsInGroup(ParcelUuid),READ_PHONE_STATE,PHONE -GROUP-
+boolean android.telephony.SubscriptionManager.isActiveSubscriptionId(int),READ_PHONE_STATE,PHONE -GROUP-
+"void android.telephony.SubscriptionManager.removeSubscriptionsFromGroup(List, ParcelUuid)",MODIFY_PHONE_STATE,PHONE -GROUP-
+"boolean android.telephony.SubscriptionManager.setOpportunistic(boolean, int)",MODIFY_PHONE_STATE,PHONE -GROUP-
+"void android.telephony.SubscriptionManager.switchToSubscription(int, PendingIntent)",WRITE_EMBEDDED_SUBSCRIPTIONS
+"void android.telephony.VisualVoicemailService.onSmsReceived(VisualVoicemailService.VisualVoicemailTask, VisualVoicemailSms)",SMS -GROUP-
+boolean android.view.inputmethod.InputMethodManager.setCurrentInputMethodSubtype(InputMethodSubtype),WRITE_SECURE_SETTINGS
+"void android.view.inputmethod.InputMethodManager.setInputMethod(IBinder, String)",WRITE_SECURE_SETTINGS
+"void android.view.inputmethod.InputMethodManager.setInputMethodAndSubtype(IBinder, String, InputMethodSubtype)",WRITE_SECURE_SETTINGS
+void android.webkit.WebSettings.setBlockNetworkLoads(boolean),INTERNET
+void android.webkit.WebSettings.setGeolocationEnabled(boolean),LOCATION -GROUP-,ACCESS_FINE_LOCATION,ACCESS_COARSE_LOCATION
+WebView.HitTestResult android.webkit.WebView.getHitTestResult(),PHONE -GROUP-
+String android.view.textclassifier.ConversationAction.getType(),CALENDAR -GROUP-
+float android.view.DragEvent.getX(),LOCATION -GROUP-
+float android.view.DragEvent.getY(),LOCATION -GROUP-
+void android.view.View.setAutofillHints(String),PHONE -GROUP-
+"boolean android.provider.CalendarContract.startViewCalendarEventInManagedProfile(Context, long, long, long, boolean, int)",CALENDAR -GROUP-
+boolean android.provider.Settings.canDrawOverlays(Context),SYSTEM_ALERT_WINDOW
+SmsMessage[] android.provider.Telephony.Sms.Intents.getMessagesFromIntent(Intent),SMS -GROUP-
+Uri android.provider.MediaStore.setRequireOriginal(Uri),LOCATION -GROUP-,ACCESS_MEDIA_LOCATION
+String android.provider.Telephony.Sms.getDefaultSmsPackage(Context),SMS -GROUP-
+boolean android.provider.Settings.System.canWrite(Context),WRITE_SETTINGS
+"long android.provider.Telephony.Threads.getOrCreateThreadId(Context, String)",SMS -GROUP-
