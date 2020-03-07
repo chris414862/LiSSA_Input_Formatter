@@ -105,7 +105,7 @@ def print_stats(stats):
     print("\n\nANNOTATION COUNTS")
     print("Num. sinks:\t\t",stats['SinksAndSourcesCount']['sink'],"\t\tNum. sources:\t",
           stats['SinksAndSourcesCount']['source'])
-    print("From DroidSafe:\t",stats['Origin']['dsafe'],'\t\tFrom SuSi:\t\t',stats['Origin']['dsafe']
+    print("From DroidSafe:\t",stats['Origin']['dsafe'],'\t\tFrom SuSi:\t\t',stats['Origin']['susi']
           ,'\tFrom permission map:\t',stats['Origin']['perm_map'])
 
     # Category counts
